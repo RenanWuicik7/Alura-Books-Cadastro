@@ -1,0 +1,176 @@
+.cabecalho__menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Menu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburguer {
+    background-image: url("../img/Menu\ Aberto.png");
+}
+
+.container__botao:checked ~ .container__rotulo {
+    background: var(--azul-degrade);
+}
+
+.container__imagem {
+    padding: 1em;
+}
+
+.lista-menu {
+    z-index: 10;
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.container__botao:checked ~ .lista-menu {
+    display: block;
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu__item {
+    font-weight: 400;
+}
+
+.lista-menu__link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.container__botao, .container__texto {
+    display: none;
+}
+
+/* Remoção de Elementos Reponsivos do tipo tablet e/ou Desktop */
+
+.container__titulo, .container__titulo--negrito, .opcoes {
+    display: none;
+}
+
+/* Responsivo tipo Tablet */
+@media screen and (min-width: 1024px){
+    /* Logo */
+    .container__titulo, .container__titulo--negrito {
+        display: inline;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 30px;
+    }
+
+    .container__titulo {
+        font-weight: 400; 
+    }
+
+    .container__titulo--negrito {
+        font-weight: 700;
+    }
+
+    /* Menu de Navegação */
+    .opcoes {
+        display: flex;
+    }
+
+    .opcoes__botao:checked ~ .opcoes__rotulo > .opcoes__item {
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
+    .opcoes__item {
+        padding: 2em 1em;
+        text-transform: uppercase;
+    }
+
+    /* Interação com o usuário */
+    .lista-menu__item:hover {
+        background: var(--azul-degrade);
+        transition: 0.5s;
+    }
+
+    .lista-menu__item:hover > .lista-menu__link {
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
+        transition: 0.5s;
+    }
+
+    .opcoes__link {
+        text-decoration: none;
+        color: var(--preto);
+        transition: 0.5s;
+    }
+
+    /* Icones */
+    .container__imagem--transparente {
+        display: none;
+    }
+
+    /* Menu Hamburguer */
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .opcoes__botao:checked ~ .lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    .opcoes__botao, .cadastro-div {
+        display: none;
+    }
+}
+
+/* Responsivo tipo Desktop */
+@media screen and (min-width: 1728px) {
+    /* Cabeçalho todo */
+    .cabecalho {
+        padding: 0 2em;
+    }
+
+    /* Texto dos icones */
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container__texto {
+        display: block;
+    }
+
+    .opcoes {
+        margin-right: auto;
+    }
+
+    .cadastro-div {
+        display: none;
+    }
+}

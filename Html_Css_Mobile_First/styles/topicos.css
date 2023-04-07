@@ -1,0 +1,70 @@
+.topicos {
+    background: var(--azul-degrade);
+    text-align: center;
+}
+
+.topicos__titulo {
+    text-transform: uppercase;
+    color: var(--branco);
+    font-weight: 300;
+    padding: 2em 0;
+}
+
+.topicos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.topicos__item {
+    margin: 1.5em 0.5em;
+}
+
+.topicos__link {
+    color: var(--branco);
+    background-color: var(--laranja);
+    padding: 1em;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* Inicio do reponsivo do tablet*/
+@media screen and (min-width: 1024px) {
+    /* Titulo da section de tópicos */
+    .topicos__titulo {
+        font-size: 24px;
+    }
+
+    /* Conteúdo da section */
+    .topicos__item {
+        margin: 2em 1em;
+    }
+
+    .topicos__link {
+        font-size: 24px;
+    }
+
+    /* Interação com o usuário */
+    .topicos__link:hover {
+        color: var(--laranja);
+        background-color: var(--branco);
+        transition: 0.5s;
+    }
+
+    .lista-rodape__link:hover {
+        color: var(--laranja);
+        transition: 0.5s;
+    }
+}
+
+/* Responsive Desktop */
+@media screen and (min-width: 1728px) {
+    .topicos {
+        padding: 3em 25vw;
+    }
+
+    .topicos__titulo {
+        padding: 1em 0;
+    }
+}
