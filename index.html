@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Html_Css_Mobile_First/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="Html_Css_Mobile_First/style.css">
+    <title>AluraBooks - Home</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav>
+            <div class="container">
+                <input type="checkbox" id="menu" class="container__botao">
+                <label for="menu" class="container__rotulo">
+                    <span class="cabecalho__menu-hamburguer container__imagem"></span>
+                </label>
+                <ul class="lista-menu">
+                    <li class="lista-menu__titulo">Categorias</li>
+                    <li class="lista-menu__item">
+                        <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="lista-menu__link">Programação</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="lista-menu__link">Front-end</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="lista-menu__link">Infraestrutura</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="lista-menu__link">Business</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="lista-menu__link">Design e UX</a>
+                    </li>
+                </ul>
+                <img src="Html_Css_Mobile_First/img/Logo.svg" alt="Logo Da AluraBooks" class="container__imagem">
+                <h1 class="container__titulo"><b class="container__titulo--negrito">Alura</b>Books</h1>
+            </div>
+        </nav>
+
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+            <label for="opcoes-menu" class="opcoes__rotulo">
+                <li class="opcoes__item">Categorias</li>
+            </label>
+                <ul class="lista-menu">
+                    <li class="lista-menu__item">
+                        <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="lista-menu__link">Programação</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="lista-menu__link">Front-end</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="lista-menu__link">Infraestrutura</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="lista-menu__link">Business</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="lista-menu__link">Design e UX</a>
+                    </li>
+                </ul>
+           
+            <li class="opcoes__item">
+                <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="opcoes__link">Favoritos</a>
+            </li>
+            <li class="opcoes__item">
+                <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="opcoes__link">Minha Estante</a>
+            </li>
+            <li class="opcoes__item">
+                <a href="cadastro.html" class="opcoes__link">Cadastro</a>
+            </li>
+        </ul>
+
+        <div class="container">
+            <a href="https://html-css-practicing.vercel.app/pageNotExist.html">
+                <img src="Html_Css_Mobile_First/img/Favoritos.svg" alt="Meus Favoritos" class="container__imagem container__imagem--transparente">
+            </a>
+            <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="container__link">
+                <img src="Html_Css_Mobile_First/img/Compras.svg" alt="Carrinho de Compras" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="container__link">
+                <img src="Html_Css_Mobile_First/img/Usuario.png" alt="Meu Perfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
+        </div>   
+    </header>
+    <main>
+        <section class="banner">
+            <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+            <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+            <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+        </section>
+        <section class="carrosel">
+            <h2 class="carrosel__titulo">Últimos Lancamentos</h2>
+            <div class="carrosel__container">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="Html_Css_Mobile_First/img/ApacheKafka.png" alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                    <div class="swiper-slide"><img src="Html_Css_Mobile_First/img/Liderança.png" alt="Livro sobre liderança em design da aluta books"></div>
+                    <div class="swiper-slide"><img src="Html_Css_Mobile_First/img/Javascript.png" alt="Livro sobre Javascript assertivo da alura"></div>
+                    <div class="swiper-slide"><img src="Html_Css_Mobile_First/img/Guia Front-end.png" alt="Livro guia de Front-end"></div>
+                    <div class="swiper-slide"><img src="Html_Css_Mobile_First/img/Portugol.png" alt="Livro sobre portugol"></div>
+                    <div class="swiper-slide"><img src="Html_Css_Mobile_First/img/acessibilidade.png" alt=""></div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                <div class="card">
+                    <div class="card__descricao">
+                        <div class="descricao">
+                            <h3 class="descricao__titulo">Talvez você também se interrese por...</h3>
+                            <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                            <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                        </div>
+                        <img src="Html_Css_Mobile_First/img/Angular.png" alt="Logo do Angular" class="descricao__imagem">
+                    </div>
+                    <div class="card__botoes">
+                        <ul class="botoes">
+                            <li class="botoes__item"><img src="Html_Css_Mobile_First/img/Favoritos-1.svg" alt="Favoritar Livro"></li>
+                            <li class="botoes__item"><img src="Html_Css_Mobile_First/img/Sacola.png" alt="Adicionar ao carrinho"></li>
+                        </ul>
+                        <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="botoes__ancora">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mais-vendidos">
+            <h2 class="mais-vendidos__titulo">mais vendidos</h2>
+            <!-- Slider main container -->
+            <div class="carrosel__container">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="Html_Css_Mobile_First/img/ApacheKafka.png" alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                        <div class="swiper-slide"><img src="Html_Css_Mobile_First/img/Liderança.png" alt="Livro sobre liderança em design da aluta books"></div>
+                        <div class="swiper-slide"><img src="Html_Css_Mobile_First/img/Javascript.png" alt="Livro sobre Javascript assertivo da alura"></div>
+                        <div class="swiper-slide"><img src="Html_Css_Mobile_First/img/Guia Front-end.png" alt="Livro guia de Front-end"></div>
+                        <div class="swiper-slide"><img src="Html_Css_Mobile_First/img/Portugol.png" alt="Livro sobre portugol"></div>
+                        <div class="swiper-slide"><img src="Html_Css_Mobile_First/img/acessibilidade.png" alt=""></div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="card">
+                    <div class="card__descricao">
+                        <div class="descricao">
+                            <img src="Html_Css_Mobile_First/img/Estrelinhas.png" class="estrelinhas" alt="Imagem de 5 estrelinhas uma ao lado da outra">
+                            <h3 class="descricao__titulo">Autora do Mês</h3>
+                            <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
+                            <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+                        </div>
+                        <img src="Html_Css_Mobile_First/img/Perfil-escritora.png" alt="Imagem da Juliana a autora do livro" class="descricao__imagem">
+                    </div>
+                    <div class="card__botoes">
+                        <ul class="botoes">
+                            <li class="botoes__item"><img src="Html_Css_Mobile_First/img/Favoritos-1.svg" alt="Favoritar Livro"></li>
+                            <li class="botoes__item"><img src="Html_Css_Mobile_First/img/Sacola.png" alt="Adicionar ao carrinho"></li>
+                        </ul>
+                        <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="botoes__ancora">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="topicos">
+            <h2 class="topicos__titulo">tópicos visitados recentemente</h2>
+            <ul class="topicos__lista">
+                <li class="topicos__item">
+                    <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="topicos__link">Android</a>
+                </li>
+                <li class="topicos__item">
+                    <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="topicos__link">Marketing Digital</a>
+                </li>
+                <li class="topicos__item">
+                    <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="topicos__link">Agile</a>
+                </li>
+                <li class="topicos__item">
+                    <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="topicos__link">Startups</a>
+                </li>
+                <li class="topicos__item">
+                    <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="topicos__link">HTML & CSS</a>
+                </li>
+                <li class="topicos__item">
+                    <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="topicos__link">Python</a>
+                </li>
+                <li class="topicos__item">
+                    <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="topicos__link">OO</a>
+                </li>
+                <li class="topicos__item">
+                    <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="topicos__link">Java</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="contato">
+            <div class="contato__descricao">
+                <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+                <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+            </div>
+            <input type="mail" placeholder="Cadastre seu e-mail" class="contato__email">
+        </section>
+    </main>
+
+    <hr/>
+
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Grupo Alura</h2>
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Educação</li>
+            <li class="lista-rodape__item">
+                <img src="Html_Css_Mobile_First/img/Caelum.png" alt="Logo da caelum">
+                <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="lista-rodape__link">Caelum</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="Html_Css_Mobile_First/img/CasaDoCodigo.png" alt="Logo da casa do código">
+                <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="lista-rodape__link">Casa do Código</a>
+            </li>
+        </ul>
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Educação Online</li>
+            <li class="lista-rodape__item">
+                <img src="Html_Css_Mobile_First/img/Alura.png" alt="Logo da Alura">
+                <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="lista-rodape__link">Alura</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="Html_Css_Mobile_First/img/AluraEmpresas.png" alt="Logo da Alura Para Empresas">
+                <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="lista-rodape__link">Alura Para Empresas</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="Html_Css_Mobile_First/img/AluraLatam.png" alt="Logo da Alura LATAM">
+                <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="lista-rodape__link">Alura LATAM</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="Html_Css_Mobile_First/img/AluraStart.png" alt="Logo da Alura Start">
+                <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="lista-rodape__link">Alura Start</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="Html_Css_Mobile_First/img/MusicDot.png" alt="Logo do MusicDot">
+                <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="lista-rodape__link">MusicDot</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="Html_Css_Mobile_First/img/AluraLingua.png" alt="Logo da Alura Língua">
+                <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="lista-rodape__link">Alura Língua</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="Html_Css_Mobile_First/img/PM3.png" alt="Logo da PM3">
+                <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="lista-rodape__link">PM3</a>
+            </li>
+        </ul>
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Comunidade</li>
+            <li class="lista-rodape__item">
+                <img src="Html_Css_Mobile_First/img/HipstersTech.png" alt="Logo Da Hipsters ponto Tech">
+                <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="lista-rodape__link">Hipsters ponto Tech</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="Html_Css_Mobile_First/img/Scuba.png" alt="Logo Do Scuba Dev">
+                <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="lista-rodape__link">Scuba Dev</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="Html_Css_Mobile_First/img/Layers.png" alt="Logo Do Layers ponto Tech">
+                <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="lista-rodape__link">Layers ponto Tech</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="Html_Css_Mobile_First/img/LikeABoss.png" alt="Logo Do Like a Boss">
+                <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="lista-rodape__link">Like a Boss</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="Html_Css_Mobile_First/img/CarreiraSemFronteira.png" alt="Logo Do Carreira sem Fronteira">
+                <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="lista-rodape__link">Carreira sem Fronteira</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="Html_Css_Mobile_First/img/HipstersJobs.png" alt="Logo Do Hipsters ponto Jobs">
+                <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="lista-rodape__link">Hipsters ponto Jobs</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img src="Html_Css_Mobile_First/img/GUJ.png" alt="Logo Do GUJ">
+                <a href="https://html-css-practicing.vercel.app/pageNotExist.html" class="lista-rodape__link">GUJ</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        loop: true,
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+           prevEl: '.swiper-button-prev',
+        },
+
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+        });
+    </script>
+</body>
+</html>
